@@ -33,8 +33,8 @@ HORIZONTAL_GRID_IS_DETECTION_TASK: bool = IS_DETECTION_TASK
 
 ###############################################################
 #### * Set up visualization params for VerticalGrid class #####
-VERTICAL_GRID_ROWS: int = None
-VERTICAL_GRID_COLS: int = None
+VERTICAL_GRID_ROWS: int = 5
+VERTICAL_GRID_COLS: int = 5
 VERTICAL_GRID_IS_DETECTION_TASK: bool = IS_DETECTION_TASK
 ###############################################################
 
