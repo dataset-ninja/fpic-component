@@ -13,37 +13,41 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "PCBSegClassNet"
+PROJECT_NAME_FULL: str = (
+    "PCBSegClassNet - A Light-weight Network for Segmentation and Classification of PCB Component"
+)
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.CC_BY_NC_ND_4_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Engineering()]
+CATEGORY: Category = Category.EnergyAndUtilities()
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation()]
+ANNOTATION_TYPES: List[AnnotationType] = [CVTask.InstanceSegmentation()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2923-01-29"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://github.com/CandleLabAI/PCBSegClassNet"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/pcbsegclassnet"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://www.kaggle.com/datasets/aditidankar/pcbsegclassnet/download?datasetVersionNumber=1"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,12 +55,14 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[
+    Union[str, List[str], Dict[str, str]]
+] = "https://www.sciencedirect.com/science/article/abs/pii/S0957417423005316"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+CITATION_URL: Optional[str] = "https://github.com/CandleLabAI/PCBSegClassNet#citation"
+AUTHORS: Optional[List[str]] = ["Dhruv Makwana", "Sai Chandra Teja R.", "Sparsh Mittal"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
