@@ -29,14 +29,14 @@ CATEGORY: Category = Category.EnergyAndUtilities()
 CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [CVTask.InstanceSegmentation()]
 
-RELEASE_DATE: Optional[str] = "2923-01-29"  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2023-01-29"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
 HOMEPAGE_URL: str = "https://github.com/CandleLabAI/PCBSegClassNet"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 3731142
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/pcbsegclassnet"

@@ -1,7 +1,7 @@
 import os
-import shutil
 from urllib.parse import unquote, urlparse
 
+import cv2
 import numpy as np
 import supervisely as sly
 from dataset_tools.convert import unpack_if_archive
