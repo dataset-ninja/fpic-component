@@ -14,9 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "PCBSegClassNet"
-PROJECT_NAME_FULL: str = (
-    "PCBSegClassNet - A Light-weight Network for Segmentation and Classification of PCB Component"
-)
+PROJECT_NAME_FULL: str = "PCBSegClassNet - A Light-weight Network for Segmentation and Classification of PCB Component"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -64,8 +62,10 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 CITATION_URL: Optional[str] = "https://github.com/CandleLabAI/PCBSegClassNet#citation"
 AUTHORS: Optional[List[str]] = ["Dhruv Makwana", "Sai Chandra Teja R.", "Sparsh Mittal"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[
+    Union[str, List[str]]
+] = "Electronics and Communications Engineering Department, Indian Institute of Technology (IIT) Roorkee, India."
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://ece.iitr.ac.in/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
@@ -82,7 +82,9 @@ SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = None
 def check_names():
     fields_before_upload = [PROJECT_NAME]  # PROJECT_NAME_FULL
     if any([field is None for field in fields_before_upload]):
-        raise ValueError("Please fill all fields in settings.py before uploading to instance.")
+        raise ValueError(
+            "Please fill all fields in settings.py before uploading to instance."
+        )
 
 
 def get_settings():
@@ -106,7 +108,9 @@ def get_settings():
     }
 
     if any([field is None for field in settings.values()]):
-        raise ValueError("Please fill all fields in settings.py after uploading to instance.")
+        raise ValueError(
+            "Please fill all fields in settings.py after uploading to instance."
+        )
 
     settings["release_date"] = RELEASE_DATE
     settings["download_original_url"] = DOWNLOAD_ORIGINAL_URL
