@@ -17,7 +17,7 @@ PROJECT_NAME: str = "PCBSegClassNet"
 PROJECT_NAME_FULL: str = (
     "PCBSegClassNet: A Light-weight Network for Segmentation and Classification of PCB Component"
 )
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
