@@ -14,17 +14,23 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "PCBSegClassNet"
-PROJECT_NAME_FULL: str = "PCBSegClassNet - A Light-weight Network for Segmentation and Classification of PCB Component"
+PROJECT_NAME_FULL: str = (
+    "PCBSegClassNet: A Light-weight Network for Segmentation and Classification of PCB Component"
+)
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_NC_ND_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Engineering()]
-CATEGORY: Category = Category.EnergyAndUtilities()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.WasteRecycling()]
+CATEGORY: Category = Category.Environmental()
 
-CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation()]
+CV_TASKS: List[CVTask] = [
+    CVTask.InstanceSegmentation(),
+    CVTask.SemanticSegmentation(),
+    CVTask.ObjectDetection(),
+]
 ANNOTATION_TYPES: List[AnnotationType] = [CVTask.InstanceSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2023-01-29"  # e.g. "YYYY-MM-DD"
@@ -82,9 +88,7 @@ SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = None
 def check_names():
     fields_before_upload = [PROJECT_NAME]  # PROJECT_NAME_FULL
     if any([field is None for field in fields_before_upload]):
-        raise ValueError(
-            "Please fill all fields in settings.py before uploading to instance."
-        )
+        raise ValueError("Please fill all fields in settings.py before uploading to instance.")
 
 
 def get_settings():
@@ -108,9 +112,7 @@ def get_settings():
     }
 
     if any([field is None for field in settings.values()]):
-        raise ValueError(
-            "Please fill all fields in settings.py after uploading to instance."
-        )
+        raise ValueError("Please fill all fields in settings.py after uploading to instance.")
 
     settings["release_date"] = RELEASE_DATE
     settings["download_original_url"] = DOWNLOAD_ORIGINAL_URL
