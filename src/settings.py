@@ -24,7 +24,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 LICENSE: License = License.CC_BY_NC_ND_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.WasteRecycling()]
-CATEGORY: Category = Category.Environmental()
+CATEGORY: Category = Category.Environmental(extra=Category.Manufacturing())
 
 CV_TASKS: List[CVTask] = [
     CVTask.InstanceSegmentation(),
@@ -70,7 +70,7 @@ AUTHORS: Optional[List[str]] = ["Dhruv Makwana", "Sai Chandra Teja R.", "Sparsh 
 
 ORGANIZATION_NAME: Optional[
     Union[str, List[str]]
-] = "Electronics and Communications Engineering Department, Indian Institute of Technology (IIT) Roorkee, India."
+] = "Indian Institute of Technology, India."
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://ece.iitr.ac.in/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
