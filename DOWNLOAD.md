@@ -1,6 +1,6 @@
 Dataset **PCBSegClassNet** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/q/T/GT/BoQ9PKzp5CjME3M1UJ6vyy9dkHMLBmE1GLlB6AXUwENaPlhSJ9s3X6iSpOlRaEYHpeE1burJU6a82kqhoeRBFi7urLsfndClyTEI9LgRAmDc324BYUVkyotB8zvZ.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/h/s/um/2nyl7WFB0SSycGepavUD3pKCoKv3qNtWeQlotlljCMwtRAVRTYGislCEQX9iNiby26KowsF6mEDd4AaXAXeJpfups8pT5rymqPxvAEr4uXtIa4B23hMPT0o49BPZ.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
