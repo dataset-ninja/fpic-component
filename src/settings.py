@@ -22,7 +22,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_NC_ND_4_0()
+LICENSE: License = License.CC_BY_NC_ND_4_0(source_url="https://github.com/CandleLabAI/PCBSegClassNet#license")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.WasteRecycling()]
 CATEGORY: Category = Category.Environmental(extra=Category.Manufacturing())
 
