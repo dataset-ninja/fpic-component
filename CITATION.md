@@ -1,6 +1,6 @@
-If you make use of the PCBSegClassNet data, please cite the following reference:
+If you make use of the FPIC-Component data, please cite the following reference:
 
-``` apa
+``` bibtex
 @article{makwana2023pcbsegclassnet,
   title={PCBSegClassNet—A light-weight network for segmentation and classification of PCB component},
   author={Makwana, Dhruv and Mittal, Sparsh and others},

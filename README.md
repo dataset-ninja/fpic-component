@@ -1,3 +1,3 @@
-# PCBSegClassNet: A Light-weight Network for Segmentation and Classification of PCB Component
+# FICS PCB Image CollectionFPIC (FPIC) Component
 
-PCBSegClassNet is a dataset for instance segmentation, semantic segmentation, and object detection tasks.
+FPIC-Component is a dataset for instance segmentation, semantic segmentation, and object detection tasks.

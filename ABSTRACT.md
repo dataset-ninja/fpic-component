@@ -1,8 +1,121 @@
-PCB component classification and segmentation can be helpful for PCB waste recycling. However, the variance in shapes and sizes of PCB components presents crucial challenges. Authors propose **PCBSegClassNet**, a novel deep neural network for PCB component segmentation. The network uses a two-branch design that captures the global context in one branch and spatial features in the other. The fusion of two branches allows the effective segmentation of components of various sizes and shapes. They reinterpret the skip connections as a learning module to learn features efficiently. 
+**FICS PCB Image CollectionFPIC (FPIC) Component** dataset is specifically designed for instance segmentation tasks. Comprising 6260 images, this dataset contains 29639 labeled objects distributed across 25 distinct classes, encompassing components such as *C*, *R*, *U*, as well as other classes like *J*, *L*, *Q*, *P*, and more. Derived from the FPIC dataset, this compilation involves the cropping of images representing 25 component classes. This dataset serves as a valuable resource for training models in instance segmentation, particularly focused on identifying and delineating various electronic component classes within PCB (Printed Circuit Board) images.
+
+Authors propose **PCBSegClassNet**, a novel deep neural network for PCB component segmentation. The network uses a two-branch design that captures the global context in one branch and spatial features in the other. The fusion of two branches allows the effective segmentation of components of various sizes and shapes. They reinterpret the skip connections as a learning module to learn features efficiently. 
 
 Authors evaluate the performance on publicly available dataset FPIC (Jessurun et al., 2022). There are 230 images of 73 distinct PCBs in the dataset, taken from both the front and rear sides of the PCBs. Over 58,000 annotations are included in the images, including annotations for the text and any attached components. There are total of 58 different components annotated. Of these, we use 25 components for evaluation:
 
-![PCB Components](https://i.ibb.co/tYqL4CS/Screenshot-2023-09-13-101900.png)
+<table>
+  <tr>
+    <th>No.</th>
+    <th>Component</th>
+    <th>Count</th>
+    <th>No.</th>
+    <th>Component</th>
+    <th>Count</th>
+    <th>No.</th>
+    <th>Component</th>
+    <th>Count</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Resistor (R)</td>
+    <td>7246</td>
+    <td>9</td>
+    <td>Resistor Network (RN)</td>
+    <td>330</td>
+    <td>17</td>
+    <td>CRA</td>
+    <td>54</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Capacitor (C)</td>
+    <td>6896</td>
+    <td>10</td>
+    <td>Test Point (TP)</td>
+    <td>266</td>
+    <td>18</td>
+    <td>Switch (SW)</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Integrated Circuit (U)</td>
+    <td>761</td>
+    <td>11</td>
+    <td>Integrated Circuit (IC)</td>
+    <td>237</td>
+    <td>19</td>
+    <td>Transformer (T)</td>
+    <td>47</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Discrete Transistor (Q)</td>
+    <td>616</td>
+    <td>12</td>
+    <td>Plug (P)</td>
+    <td>200</td>
+    <td>20</td>
+    <td>Fuse (F)</td>
+    <td>44</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Connector (J)</td>
+    <td>579</td>
+    <td>13</td>
+    <td>Thyristor (CR)</td>
+    <td>194</td>
+    <td>21</td>
+    <td>Vaccum Tube (V)</td>
+    <td>41</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Inductor (L)</td>
+    <td>473</td>
+    <td>14</td>
+    <td>Motor (M)</td>
+    <td>74</td>
+    <td>22</td>
+    <td>Light Emitting Diode (LED)</td>
+    <td>39</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Resistor Coil (RA)</td>
+    <td>404</td>
+    <td>15</td>
+    <td>Button (BTN)</td>
+    <td>72</td>
+    <td>23</td>
+    <td>Switch (S)</td>
+    <td>37</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Diode (D)</td>
+    <td>362</td>
+    <td>16</td>
+    <td>Ferrite Bead (FB)</td>
+    <td>69</td>
+    <td>24</td>
+    <td>QA</td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>25</td>
+    <td>Jumper Link (JP)</td>
+    <td>31</td>
+  </tr>
+</table>
 
 The “count” column shows the number of images of that component in the FPIC-component dataset.
 
