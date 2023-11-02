@@ -13,9 +13,9 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "PCBSegClassNet"
+PROJECT_NAME: str = "FPIC-Component"
 PROJECT_NAME_FULL: str = (
-    "PCBSegClassNet: A Light-weight Network for Segmentation and Classification of PCB Component"
+    "FICS PCB Image CollectionFPIC (FPIC) Component"
 )
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
@@ -43,7 +43,7 @@ HOMEPAGE_URL: str = "https://github.com/CandleLabAI/PCBSegClassNet"
 PREVIEW_IMAGE_ID: int = 3731142
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = "https://github.com/dataset-ninja/pcbsegclassnet"
+GITHUB_URL: str = "https://github.com/dataset-ninja/fpic-component"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
@@ -61,7 +61,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # Use dict key to specify name for a button
 PAPER: Optional[
     Union[str, List[str], Dict[str, str]]
-] = "https://www.sciencedirect.com/science/article/abs/pii/S0957417423005316"
+] = "https://www.researchgate.net/publication/364257730_Pcbsegclassnet_-_a_Light-Weight_Network_for_Segmentation_and_Classification_of_Pcb_Component"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
