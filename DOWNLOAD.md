@@ -1,6 +1,6 @@
 Dataset **FPIC-Component** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/V/A/Wm/Of7ZynRVwuC2DbHt790iItZ9u5EF0v5FddKCMnVgIOlHAzyVSoRINLbuFwpmNq9ccuZKBtuaTt4pAdqLpCzP47yY8wBxLQEoc2YZhrF1SE3GWeDnxR31logr39Tr.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
