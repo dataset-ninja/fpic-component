@@ -67,7 +67,7 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = "https://github.com/CandleLabAI/PCBSegClassNet#citation"
 AUTHORS: Optional[List[str]] = ["Dhruv Makwana", "Sai Chandra Teja R.", "Sparsh Mittal"]
-AUTHORS_CONTACTS: Optional[List[str]] = ["photogrammetry@uni-bonn.de"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["dmakwana503@gmail.com"]
 
 ORGANIZATION_NAME: Optional[
     Union[str, List[str]]
