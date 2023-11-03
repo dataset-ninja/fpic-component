@@ -67,6 +67,7 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = "https://github.com/CandleLabAI/PCBSegClassNet#citation"
 AUTHORS: Optional[List[str]] = ["Dhruv Makwana", "Sai Chandra Teja R.", "Sparsh Mittal"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["photogrammetry@uni-bonn.de"]
 
 ORGANIZATION_NAME: Optional[
     Union[str, List[str]]
@@ -122,6 +123,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
